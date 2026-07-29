@@ -14,7 +14,7 @@ def main():
     jp = _import_jax_numpy()
 
     wp.init()
-    device = wp.get_device("cpu")
+    device = wp.get_device("gpu")
     wp.load_module(module=scale_kernel.module, device=device)
 
     for graph_mode in (
