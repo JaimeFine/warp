@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Generics &#8212; Warp 1.17.0.dev3</title>
+    <title>Generics &#8212; Warp 1.19.0.dev1</title>
   
   
   
@@ -28,36 +28,37 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=cb8930eaaf36d9849b67" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=cb8930eaaf36d9849b67" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/nvidia-sphinx-theme.css?v=933278ad" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=21194238" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ca94f457" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+  <script defer src="../../_static/scripts/fontawesome.js?digest=cb8930eaaf36d9849b67"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=cb8930eaaf36d9849b67" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=cb8930eaaf36d9849b67" />
 
 
 
-    <script src="../../_static/documentation_options.js?v=01d75c2b"></script>
+    <script src="../../_static/documentation_options.js?v=130af3c1"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=fd10adb8"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/programming_model/generics';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.20.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.21.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://nvidia.github.io/warp/versions.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../../_static/copy-page-source.js?v=f9064be3"></script>
 
     <link rel="icon" href="../../_static/favicon.png"/>
 
@@ -69,7 +70,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="1.17.0.dev3" />
+  <meta name="docsearch:version" content="1.19.0.dev1" />
   
     
     <script src="../../_static/searchtools.js"></script>
@@ -146,11 +147,11 @@
       
     
     
-    <img src="../../_static/nvidia-logo-horiz-rgb-blk-for-screen.svg" class="logo__image only-light" alt="Warp 1.17.0.dev3 - Home"/>
-    <img src="../../_static/nvidia-logo-horiz-rgb-wht-for-screen.svg" class="logo__image only-dark pst-js-only" alt="Warp 1.17.0.dev3 - Home"/>
+    <img src="../../_static/nvidia-logo-horiz-rgb-blk-for-screen.svg" class="logo__image only-light" alt="Warp 1.19.0.dev1 - Home"/>
+    <img src="../../_static/nvidia-logo-horiz-rgb-wht-for-screen.svg" class="logo__image only-dark pst-js-only" alt="Warp 1.19.0.dev1 - Home"/>
   
   
-    <p class="title logo__title">Warp 1.17.0.dev3</p>
+    <p class="title logo__title">Warp 1.19.0.dev1</p>
   
 </a></div>
     
@@ -290,11 +291,11 @@
       
     
     
-    <img src="../../_static/nvidia-logo-horiz-rgb-blk-for-screen.svg" class="logo__image only-light" alt="Warp 1.17.0.dev3 - Home"/>
-    <img src="../../_static/nvidia-logo-horiz-rgb-wht-for-screen.svg" class="logo__image only-dark pst-js-only" alt="Warp 1.17.0.dev3 - Home"/>
+    <img src="../../_static/nvidia-logo-horiz-rgb-blk-for-screen.svg" class="logo__image only-light" alt="Warp 1.19.0.dev1 - Home"/>
+    <img src="../../_static/nvidia-logo-horiz-rgb-wht-for-screen.svg" class="logo__image only-dark pst-js-only" alt="Warp 1.19.0.dev1 - Home"/>
   
   
-    <p class="title logo__title">Warp 1.17.0.dev3</p>
+    <p class="title logo__title">Warp 1.19.0.dev1</p>
   
 </a>
 
@@ -413,6 +414,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../execution_and_performance/memory_management.html">Memory Allocation and Access</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../execution_and_performance/profiling.html">Profiling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../execution_and_performance/deterministic_execution.html">Deterministic Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../execution_and_performance/reducing_compilation_and_startup_time.html">Reducing Compilation and Startup Time</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../configuration.html">Configuration</a></li>
@@ -428,8 +430,10 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp.html">warp</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_autograd.html">warp.autograd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_build_experimental.html">warp.build_experimental</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_config.html">warp.config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_fem.html">warp.fem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_geometry.html">warp.geometry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_optim.html">warp.optim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_render.html">warp.render</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_sparse.html">warp.sparse</a></li>
@@ -496,10 +500,43 @@
       
         <div class="header-article-item">
 
+
+
 <div class="d-flex justify-content-end w-100">
-  <a href="../../_sources/user_guide/programming_model/generics.rst.txt">
-    <i class="fa-solid fa-file-code"></i> View page source
-  </a>
+  <div class="btn-group copy-page-source pst-js-only" data-page-source-control role="group" aria-label="Page source">
+    <button
+      type="button"
+      class="btn btn-sm btn-outline-secondary"
+      data-copy-page-source
+      data-page-source-url="../../_sources/user_guide/programming_model/generics.rst.txt"
+      disabled
+    >
+      <i class="fa-solid fa-copy" aria-hidden="true"></i>
+      <span data-copy-page-source-label>Copy source</span>
+    </button>
+    <button
+      type="button"
+      class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <span class="visually-hidden">Page source options</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li>
+        <a class="dropdown-item" href="../../_sources/user_guide/programming_model/generics.rst.txt">
+          <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+          View source
+        </a>
+      </li>
+    </ul>
+    <span class="visually-hidden" role="status" aria-live="polite" data-copy-page-source-status></span>
+  </div>
+  <noscript>
+    <a href="../../_sources/user_guide/programming_model/generics.rst.txt">
+      <i class="fa-solid fa-file-code" aria-hidden="true"></i> View source
+    </a>
+  </noscript>
 </div>
 </div>
       
@@ -573,9 +610,9 @@ The concepts discussed on this page also apply to <a class="reference internal" 
 </pre></div>
 </div>
 <p>During each one of these launches, a new kernel instance is being generated, which forces the module to be reloaded.  You might see something like this in the output:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Module __main__ load on device &#39;cuda:0&#39; took 170.37 ms
-Module __main__ load on device &#39;cuda:0&#39; took 171.43 ms
-Module __main__ load on device &#39;cuda:0&#39; took 179.49 ms
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Module __main__ load on device 'cuda:0' took 170.37 ms
+Module __main__ load on device 'cuda:0' took 171.43 ms
+Module __main__ load on device 'cuda:0' took 179.49 ms
 </pre></div>
 </div>
 <p>This leads to a couple of potential problems:</p>
@@ -613,9 +650,9 @@ Module __main__ load on device &#39;cuda:0&#39; took 179.49 ms
 </pre></div>
 </div>
 <p>Instead of an argument list, a dictionary can also be provided:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">wp</span><span class="o">.</span><span class="n">overload</span><span class="p">(</span><span class="n">scale</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">wp</span><span class="o">.</span><span class="n">float16</span><span class="p">],</span> <span class="s2">&quot;s&quot;</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">float16</span><span class="p">})</span>
-<span class="n">wp</span><span class="o">.</span><span class="n">overload</span><span class="p">(</span><span class="n">scale</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">wp</span><span class="o">.</span><span class="n">float32</span><span class="p">],</span> <span class="s2">&quot;s&quot;</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">float32</span><span class="p">})</span>
-<span class="n">wp</span><span class="o">.</span><span class="n">overload</span><span class="p">(</span><span class="n">scale</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">wp</span><span class="o">.</span><span class="n">float64</span><span class="p">],</span> <span class="s2">&quot;s&quot;</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">float64</span><span class="p">})</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">wp</span><span class="o">.</span><span class="n">overload</span><span class="p">(</span><span class="n">scale</span><span class="p">,</span> <span class="p">{</span><span class="s2">"x"</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">wp</span><span class="o">.</span><span class="n">float16</span><span class="p">],</span> <span class="s2">"s"</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">float16</span><span class="p">})</span>
+<span class="n">wp</span><span class="o">.</span><span class="n">overload</span><span class="p">(</span><span class="n">scale</span><span class="p">,</span> <span class="p">{</span><span class="s2">"x"</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">wp</span><span class="o">.</span><span class="n">float32</span><span class="p">],</span> <span class="s2">"s"</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">float32</span><span class="p">})</span>
+<span class="n">wp</span><span class="o">.</span><span class="n">overload</span><span class="p">(</span><span class="n">scale</span><span class="p">,</span> <span class="p">{</span><span class="s2">"x"</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">wp</span><span class="o">.</span><span class="n">float64</span><span class="p">],</span> <span class="s2">"s"</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">float64</span><span class="p">})</span>
 </pre></div>
 </div>
 <p>A dictionary might be preferred for readability.  With dictionaries, only generic arguments need to be specified, which can be even more concise when overloading kernels where some of the arguments are not generic.</p>
@@ -685,6 +722,38 @@ Module __main__ load on device &#39;cuda:0&#39; took 179.49 ms
 </div>
 <p>A generic function can be used in regular and generic kernels.  It’s not necessary to explicitly overload generic functions.  All required function overloads are generated automatically when those functions are used in kernels.</p>
 </section>
+<section id="generic-type-annotations">
+<span id="id4"></span><h2>Generic Type Annotations<a class="headerlink" href="#generic-type-annotations" title="Link to this heading">#</a></h2>
+<p>Annotating a parameter of a generic kernel or function with <code class="docutils literal notranslate"><span class="pre">typing.Any</span></code> lets it accept any type. To accept only
+one family of scalar types, annotate it with <a class="reference internal" href="../../api_reference/_generated/warp.Int.html#warp.Int" title="warp.Int"><code class="xref py py-data docutils literal notranslate"><span class="pre">wp.Int</span></code></a>, <a class="reference internal" href="../../api_reference/_generated/warp.Float.html#warp.Float" title="warp.Float"><code class="xref py py-data docutils literal notranslate"><span class="pre">wp.Float</span></code></a>, or
+<a class="reference internal" href="../../api_reference/_generated/warp.Scalar.html#warp.Scalar" title="warp.Scalar"><code class="xref py py-data docutils literal notranslate"><span class="pre">wp.Scalar</span></code></a> instead.
+These annotations can also serve as the <code class="docutils literal notranslate"><span class="pre">dtype</span></code> of generic arrays, such as <code class="docutils literal notranslate"><span class="pre">wp.array[wp.Float]</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@wp</span><span class="o">.</span><span class="n">func</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">Float</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+
+<span class="nd">@wp</span><span class="o">.</span><span class="n">kernel</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">square_all</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">wp</span><span class="o">.</span><span class="n">Float</span><span class="p">]):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">wp</span><span class="o">.</span><span class="n">tid</span><span class="p">()</span>
+    <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">square</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+<span class="n">a16</span> <span class="o">=</span> <span class="n">wp</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">wp</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
+<span class="n">a64</span> <span class="o">=</span> <span class="n">wp</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">wp</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
+
+<span class="n">wp</span><span class="o">.</span><span class="n">launch</span><span class="p">(</span><span class="n">square_all</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="n">a16</span><span class="p">])</span>
+<span class="n">wp</span><span class="o">.</span><span class="n">launch</span><span class="p">(</span><span class="n">square_all</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="n">a64</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">a16</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a64</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[1. 4. 9.]
+[1. 4. 9.]
+</pre></div>
+</div>
+<p>Launching <code class="docutils literal notranslate"><span class="pre">square_all</span></code> with an array of <a class="reference internal" href="../../api_reference/_generated/warp.int32.html#warp.int32" title="warp.int32"><code class="xref py py-class docutils literal notranslate"><span class="pre">wp.int32</span></code></a> raises an error, because <code class="docutils literal notranslate"><span class="pre">int32</span></code>
+doesn’t match <code class="docutils literal notranslate"><span class="pre">wp.Float</span></code>.</p>
+</section>
 <section id="type-operator">
 <h2>type() Operator<a class="headerlink" href="#type-operator" title="Link to this heading">#</a></h2>
 <p>Consider the following generic function:</p>
@@ -729,7 +798,9 @@ Module __main__ load on device &#39;cuda:0&#39; took 179.49 ms
 <section id="module-reloading-behavior">
 <h3>Module Reloading Behavior<a class="headerlink" href="#module-reloading-behavior" title="Link to this heading">#</a></h3>
 <p>As mentioned in the <a class="reference internal" href="#implicit-instantiation"><span class="std std-ref">implicit instantiation</span></a> section, launching new kernel overloads triggers the recompilation of the kernel module.  This adds overhead and doesn’t play well with Warp’s current kernel caching strategy.  Kernel caching relies on hashing the contents of the module, which includes all the concrete kernels and functions encountered in the Python program so far.  Whenever a new kernel or a new instance of a generic kernel is added, the module needs to be reloaded.  Re-running the Python program leads to the same sequence of kernels being added to the module, which means that implicit instantiation of generic kernels will trigger the same module reloading on every run.  This is clearly not ideal, and we intend to improve this behavior in the future.</p>
-<p>Using <a class="reference internal" href="#explicit-instantiation"><span class="std std-ref">explicit instantiation</span></a> is usually a good workaround for this, as long as the overloads are added in the same order before any kernel launches.</p>
+<p>Using <a class="reference internal" href="#explicit-instantiation"><span class="std std-ref">explicit instantiation</span></a> is usually a good workaround for this, as long as the overloads are added in the same order before any kernel launches.
+For broader guidance on avoiding module reloads and reducing startup latency,
+see <a class="reference internal" href="../execution_and_performance/reducing_compilation_and_startup_time.html"><span class="doc">Reducing Compilation and Startup Time</span></a>.</p>
 <p>Note that this issue is not specific to generic kernels.  Adding new regular kernels to a module can also trigger repetitive module reloading if the kernel definitions are intermixed with kernel launches.  For example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@wp</span><span class="o">.</span><span class="n">kernel</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">foo</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">):</span>
@@ -745,9 +816,9 @@ Module __main__ load on device &#39;cuda:0&#39; took 179.49 ms
 </pre></div>
 </div>
 <p>This code will also trigger module reloading during each kernel launch, even though it doesn’t use generics at all:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Module __main__ load on device &#39;cuda:0&#39; took 155.73 ms
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Module __main__ load on device 'cuda:0' took 155.73 ms
 17
-Module __main__ load on device &#39;cuda:0&#39; took 164.83 ms
+Module __main__ load on device 'cuda:0' took 164.83 ms
 42
 </pre></div>
 </div>
@@ -830,6 +901,7 @@ Module __main__ load on device &#39;cuda:0&#39; took 164.83 ms
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-functions">Generic Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-type-annotations">Generic Type Annotations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-operator">type() Operator</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-and-rough-edges">Limitations and Rough Edges</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#module-reloading-behavior">Module Reloading Behavior</a></li>
@@ -872,8 +944,8 @@ Module __main__ load on device &#39;cuda:0&#39; took 164.83 ms
   
 
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=cb8930eaaf36d9849b67"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=cb8930eaaf36d9849b67"></script>
 
 
   <footer class="bd-footer">

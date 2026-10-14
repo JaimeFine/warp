@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>warp.config.verbose &#8212; Warp 1.17.0.dev3</title>
+    <title>warp.mesh_query_sphere &#8212; Warp 1.19.0.dev1</title>
   
   
   
@@ -28,48 +28,49 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=cb8930eaaf36d9849b67" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=cb8930eaaf36d9849b67" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/nvidia-sphinx-theme.css?v=933278ad" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=21194238" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ca94f457" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../../_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
+  <script defer src="../../_static/scripts/fontawesome.js?digest=cb8930eaaf36d9849b67"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=cb8930eaaf36d9849b67" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=cb8930eaaf36d9849b67" />
 
 
 
-    <script src="../../_static/documentation_options.js?v=01d75c2b"></script>
+    <script src="../../_static/documentation_options.js?v=130af3c1"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=fd10adb8"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'api_reference/_generated/warp.config.verbose';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'language_reference/_generated/warp.mesh_query_sphere';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.20.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.21.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://nvidia.github.io/warp/versions.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../../_static/copy-page-source.js?v=f9064be3"></script>
 
     <link rel="icon" href="../../_static/favicon.png"/>
 
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="warp.config.verbose_warnings" href="warp.config.verbose_warnings.html" />
-    <link rel="prev" title="warp.config.use_precompiled_headers" href="warp.config.use_precompiled_headers.html" />
+    <link rel="next" title="warp.volume_index_to_world" href="warp.volume_index_to_world.html" />
+    <link rel="prev" title="warp.mesh_query_ray_count_intersections" href="warp.mesh_query_ray_count_intersections.html" />
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="1.17.0.dev3" />
+  <meta name="docsearch:version" content="1.19.0.dev1" />
   
     
     <script src="../../_static/searchtools.js"></script>
@@ -146,11 +147,11 @@
       
     
     
-    <img src="../../_static/nvidia-logo-horiz-rgb-blk-for-screen.svg" class="logo__image only-light" alt="Warp 1.17.0.dev3 - Home"/>
-    <img src="../../_static/nvidia-logo-horiz-rgb-wht-for-screen.svg" class="logo__image only-dark pst-js-only" alt="Warp 1.17.0.dev3 - Home"/>
+    <img src="../../_static/nvidia-logo-horiz-rgb-blk-for-screen.svg" class="logo__image only-light" alt="Warp 1.19.0.dev1 - Home"/>
+    <img src="../../_static/nvidia-logo-horiz-rgb-wht-for-screen.svg" class="logo__image only-dark pst-js-only" alt="Warp 1.19.0.dev1 - Home"/>
   
   
-    <p class="title logo__title">Warp 1.17.0.dev3</p>
+    <p class="title logo__title">Warp 1.19.0.dev1</p>
   
 </a></div>
     
@@ -290,11 +291,11 @@
       
     
     
-    <img src="../../_static/nvidia-logo-horiz-rgb-blk-for-screen.svg" class="logo__image only-light" alt="Warp 1.17.0.dev3 - Home"/>
-    <img src="../../_static/nvidia-logo-horiz-rgb-wht-for-screen.svg" class="logo__image only-dark pst-js-only" alt="Warp 1.17.0.dev3 - Home"/>
+    <img src="../../_static/nvidia-logo-horiz-rgb-blk-for-screen.svg" class="logo__image only-light" alt="Warp 1.19.0.dev1 - Home"/>
+    <img src="../../_static/nvidia-logo-horiz-rgb-wht-for-screen.svg" class="logo__image only-dark pst-js-only" alt="Warp 1.19.0.dev1 - Home"/>
   
   
-    <p class="title logo__title">Warp 1.17.0.dev3</p>
+    <p class="title logo__title">Warp 1.19.0.dev1</p>
   
 </a>
 
@@ -413,6 +414,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../user_guide/execution_and_performance/memory_management.html">Memory Allocation and Access</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../user_guide/execution_and_performance/profiling.html">Profiling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../user_guide/execution_and_performance/deterministic_execution.html">Deterministic Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/execution_and_performance/reducing_compilation_and_startup_time.html">Reducing Compilation and Startup Time</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../user_guide/configuration.html">Configuration</a></li>
@@ -422,19 +424,21 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Language Reference</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../language_reference/builtins.html">Built-Ins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builtins.html">Built-Ins</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../warp.html">warp</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../warp_autograd.html">warp.autograd</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../warp_config.html">warp.config</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../warp_fem.html">warp.fem</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../warp_optim.html">warp.optim</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../warp_render.html">warp.render</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../warp_sparse.html">warp.sparse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../warp_types.html">warp.types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../warp_utils.html">warp.utils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp.html">warp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_autograd.html">warp.autograd</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_build_experimental.html">warp.build_experimental</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_config.html">warp.config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_fem.html">warp.fem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_geometry.html">warp.geometry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_optim.html">warp.optim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_render.html">warp.render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_sparse.html">warp.sparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_types.html">warp.types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference/warp_utils.html">warp.utils</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Domain Modules</span></p>
 <ul class="nav bd-sidenav">
@@ -482,9 +486,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../warp_config.html" class="nav-link">warp.config</a></li>
+    <li class="breadcrumb-item"><a href="../builtins.html" class="nav-link">Built-Ins</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">warp.config.verbose</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">warp.mesh_query_sphere</span></li>
   </ul>
 </nav>
 </div>
@@ -496,10 +500,43 @@
       
         <div class="header-article-item">
 
+
+
 <div class="d-flex justify-content-end w-100">
-  <a href="../../_sources/api_reference/_generated/warp.config.verbose.rst.txt">
-    <i class="fa-solid fa-file-code"></i> View page source
-  </a>
+  <div class="btn-group copy-page-source pst-js-only" data-page-source-control role="group" aria-label="Page source">
+    <button
+      type="button"
+      class="btn btn-sm btn-outline-secondary"
+      data-copy-page-source
+      data-page-source-url="../../_sources/language_reference/_generated/warp.mesh_query_sphere.rst.txt"
+      disabled
+    >
+      <i class="fa-solid fa-copy" aria-hidden="true"></i>
+      <span data-copy-page-source-label>Copy source</span>
+    </button>
+    <button
+      type="button"
+      class="btn btn-sm btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <span class="visually-hidden">Page source options</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li>
+        <a class="dropdown-item" href="../../_sources/language_reference/_generated/warp.mesh_query_sphere.rst.txt">
+          <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+          View source
+        </a>
+      </li>
+    </ul>
+    <span class="visually-hidden" role="status" aria-live="polite" data-copy-page-source-status></span>
+  </div>
+  <noscript>
+    <a href="../../_sources/language_reference/_generated/warp.mesh_query_sphere.rst.txt">
+      <i class="fa-solid fa-file-code" aria-hidden="true"></i> View source
+    </a>
+  </noscript>
 </div>
 </div>
       
@@ -514,15 +551,54 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="warp-config-verbose">
-<h1>warp.config.verbose<a class="headerlink" href="#warp-config-verbose" title="Link to this heading">#</a></h1>
-<dl class="py data">
-<dt class="sig sig-object py" id="warp.config.verbose">
-<span class="sig-prename descclassname"><span class="pre">warp.config.</span></span><span class="sig-name descname"><span class="pre">verbose</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="warp.bool.html#warp.bool" title="warp.bool"><span class="pre">bool</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></span><a class="headerlink" href="#warp.config.verbose" title="Link to this definition">#</a></dt>
-<dd><p>Enable detailed logging during code generation and compilation.</p>
-<div class="deprecated">
-<p><span class="versionmodified deprecated">Deprecated since version Use: </span><code class="docutils literal notranslate"><span class="pre">warp.config.log_level</span> <span class="pre">=</span> <span class="pre">warp.LOG_DEBUG</span></code> instead. Reading or setting
-this flag emits a <code class="docutils literal notranslate"><span class="pre">DeprecationWarning</span></code> for external callers.</p>
+  <section id="warp-mesh-query-sphere">
+<h1>warp.mesh_query_sphere<a class="headerlink" href="#warp-mesh-query-sphere" title="Link to this heading">#</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="warp._src.lang.mesh_query_sphere">
+<span class="sig-prename descclassname"><span class="pre">warp.</span></span><span class="sig-name descname"><span class="pre">mesh_query_sphere</span></span><span class="sig-paren">(</span>
+
+<dl>
+<dd><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../api_reference/_generated/warp.uint64.html#warp.uint64" title="warp.uint64"><span class="pre">uint64</span></a></span></em>,</dd>
+<dd><em class="sig-param"><span class="n"><span class="pre">center</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../api_reference/_generated/warp.vec3f.html#warp.vec3f" title="warp.vec3f"><span class="pre">vec3f</span></a></span></em>,</dd>
+<dd><em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../api_reference/_generated/warp.float32.html#warp.float32" title="warp.float32"><span class="pre">float32</span></a></span></em>,</dd>
+</dl>
+
+<span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">_MeshQuerySphere</span></span></span><a class="headerlink" href="#warp._src.lang.mesh_query_sphere" title="Link to this definition">#</a></dt>
+<dd><ul class="wp-function-tags"><li class="wp-function-tag" data-wp-tag="kernel" data-wp-value="true"><span class="wp-function-tag-name">Kernel</span><span class="wp-function-tag-value visually-hidden">: true</span></li><li class="wp-function-tag visually-hidden" data-wp-tag="python" data-wp-value="false"><span class="wp-function-tag-name">Python</span><span class="wp-function-tag-value visually-hidden">: false</span></li><li class="wp-function-tag visually-hidden" data-wp-tag="differentiable" data-wp-value="false"><span class="wp-function-tag-name">Differentiable</span><span class="wp-function-tag-value visually-hidden">: false</span></li></ul><p>Construct a sphere query against a <a class="reference internal" href="../../api_reference/_generated/warp.Mesh.html#warp.Mesh" title="warp.Mesh"><code class="xref py py-class docutils literal notranslate"><span class="pre">warp.Mesh</span></code></a>.</p>
+<p>Iterates over mesh triangles that intersect a sphere. A broad phase uses an exact sphere-AABB test
+to find candidate triangles; a narrow phase keeps only those whose closest point on the triangle
+is within <code class="docutils literal notranslate"><span class="pre">radius</span></code> of <code class="docutils literal notranslate"><span class="pre">center</span></code>. Tangential contact (closest point exactly on the sphere surface)
+is included. A negative <code class="docutils literal notranslate"><span class="pre">radius</span></code> is clamped to zero. Degenerate (zero-area) faces are handled by
+falling back to a closest-point-on-longest-edge test. Advance the query with <a class="reference internal" href="warp.mesh_query_next.html#warp._src.lang.mesh_query_next" title="warp._src.lang.mesh_query_next"><code class="xref py py-func docutils literal notranslate"><span class="pre">mesh_query_next()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – The mesh identifier</p></li>
+<li><p><strong>center</strong> – The center of the sphere in mesh space</p></li>
+<li><p><strong>radius</strong> – The radius of the sphere; negative values are clamped to zero</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@wp</span><span class="o">.</span><span class="n">kernel</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">find_tris_in_sphere</span><span class="p">(</span><span class="n">mesh_id</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">uint64</span><span class="p">,</span> <span class="n">center</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">vec3</span><span class="p">,</span> <span class="n">radius</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+                        <span class="n">hits</span><span class="p">:</span> <span class="n">wp</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">wp</span><span class="o">.</span><span class="n">int32</span><span class="p">]):</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">wp</span><span class="o">.</span><span class="n">mesh_query_sphere</span><span class="p">(</span><span class="n">mesh_id</span><span class="p">,</span> <span class="n">center</span><span class="p">,</span> <span class="n">radius</span><span class="p">)</span>
+    <span class="n">face</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">while</span> <span class="n">wp</span><span class="o">.</span><span class="n">mesh_query_next</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">face</span><span class="p">):</span>
+        <span class="n">hits</span><span class="p">[</span><span class="n">face</span><span class="p">]</span> <span class="o">=</span> <span class="n">wp</span><span class="o">.</span><span class="n">int32</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">points</span> <span class="o">=</span> <span class="n">wp</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">wp</span><span class="o">.</span><span class="n">vec3</span><span class="p">)</span>
+<span class="n">indices</span> <span class="o">=</span> <span class="n">wp</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">wp</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+<span class="n">mesh</span> <span class="o">=</span> <span class="n">wp</span><span class="o">.</span><span class="n">Mesh</span><span class="p">(</span><span class="n">points</span><span class="o">=</span><span class="n">points</span><span class="p">,</span> <span class="n">indices</span><span class="o">=</span><span class="n">indices</span><span class="p">)</span>
+<span class="n">hits</span> <span class="o">=</span> <span class="n">wp</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">wp</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+<span class="n">wp</span><span class="o">.</span><span class="n">launch</span><span class="p">(</span><span class="n">find_tris_in_sphere</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+          <span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="n">mesh</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">wp</span><span class="o">.</span><span class="n">vec3</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">hits</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"hit:"</span><span class="p">,</span> <span class="n">hits</span><span class="o">.</span><span class="n">numpy</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>hit: 1
+</pre></div>
 </div>
 </dd></dl>
 
@@ -539,20 +615,20 @@ this flag emits a <code class="docutils literal notranslate"><span class="pre">D
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="warp.config.use_precompiled_headers.html"
+       href="warp.mesh_query_ray_count_intersections.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">warp.config.use_precompiled_headers</p>
+        <p class="prev-next-title">warp.mesh_query_ray_count_intersections</p>
       </div>
     </a>
     <a class="right-next"
-       href="warp.config.verbose_warnings.html"
+       href="warp.volume_index_to_world.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">warp.config.verbose_warnings</p>
+        <p class="prev-next-title">warp.volume_index_to_world</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -577,7 +653,7 @@ this flag emits a <code class="docutils literal notranslate"><span class="pre">D
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#warp.config.verbose"><code class="docutils literal notranslate"><span class="pre">verbose</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#warp._src.lang.mesh_query_sphere"><code class="docutils literal notranslate"><span class="pre">mesh_query_sphere()</span></code></a></li>
 </ul>
   </nav></div>
 
@@ -585,7 +661,7 @@ this flag emits a <code class="docutils literal notranslate"><span class="pre">D
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/NVIDIA/warp/edit/main/docs/api_reference/_generated/warp.config.verbose.rst">
+    <a href="https://github.com/NVIDIA/warp/edit/main/docs/language_reference/_generated/warp.mesh_query_sphere.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -612,8 +688,8 @@ this flag emits a <code class="docutils literal notranslate"><span class="pre">D
   
 
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=cb8930eaaf36d9849b67"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=cb8930eaaf36d9849b67"></script>
 
 
   <footer class="bd-footer">

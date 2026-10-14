@@ -1,28 +1,29 @@
 ﻿warp.volume\_sample\_grad
 =========================
 
-.. function:: warp._src.lang.volume_sample_grad(id: uint64, uvw: vec3f, sampling_mode: int32, grad: Any, dtype: Any) -> Any
+.. currentmodule:: warp._src.lang
 
-   .. hlist::
-      :columns: 8
+.. function:: volume_sample_grad(id: uint64, uvw: vec3f, sampling_mode: int32, grad: Any, dtype: Any) -> Any
 
-      * Kernel
-      * Differentiable
+   .. wp-function-tags::
+      :kernel: true
+      :python: false
+      :differentiable: true
 
    Sample the volume of type ``dtype`` given by ``id`` and its spatial gradient at the
    index-space point ``uvw``.
    
    Behaves like :func:`~warp.volume_sample`, additionally writing the gradient of the sampled value
    with respect to the index-space coordinates ``uvw`` into ``grad``. For a scalar ``dtype``,
-   ``grad`` is a length-three vector with the same scalar type. For :class:`warp.vec3f` and
-   :class:`warp.vec3d`, it is a 3-by-3 Jacobian matrix with one row per value component.
-   Four-component vector data is not supported by this function.
+   ``grad`` is a length-three vector with the same scalar type. For a supported N-component vector
+   type, ``grad`` is an N-by-3 Jacobian matrix with one row per value component.
    
    For floating-point scalar and vector data under :attr:`warp.Volume.LINEAR`, this is the gradient
-   of the trilinear interpolant. At integer voxel planes, where that interpolant is generally not
-   differentiable, the gradient comes from the cell on the positive side. Under
-   :attr:`warp.Volume.CLOSEST` the gradient is zero; use ``CLOSEST`` for integer data. The gradient
-   is with respect to index-space coordinates, not world space.
+   of the trilinear interpolant away from integer voxel planes. The interpolant is not generally
+   differentiable at those planes. Currently, the gradient comes from the cell on the positive
+   side, but callers should not rely on that behavior. Under :attr:`warp.Volume.CLOSEST` the
+   gradient is zero; use ``CLOSEST`` for integer data. The gradient is with respect to index-space
+   coordinates, not world space.
    
    :param id: The ``id`` of a :class:`warp.Volume` to sample.
    :param uvw: Sampling location in index space (voxel coordinates); may be fractional.

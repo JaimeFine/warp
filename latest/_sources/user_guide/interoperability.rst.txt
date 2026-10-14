@@ -91,25 +91,48 @@ When passing CUDA arrays, ensure the device on which the arrays reside matches t
 NumPy
 -----
 
-Warp arrays may be converted to a NumPy array through the :meth:`array.numpy() <warp.array.numpy>` method. When the Warp array lives on the ``cpu`` device this returns a zero-copy view onto the underlying Warp allocation. If the array lives on a ``cuda`` device, it is first copied back to a temporary buffer and then copied to NumPy.
+Warp arrays may be converted to a NumPy array through the :meth:`array.numpy() <warp.array.numpy>` method. When the Warp array lives on the ``cpu`` device, this returns a zero-copy view onto the underlying Warp allocation. When the array lives on a ``cuda`` device, this method synchronously copies the data to a temporary CPU allocation and returns a NumPy view of that allocation.
 
-Warp CPU arrays also implement the ``__array_interface__`` protocol and can be used to construct NumPy arrays directly::
+Warp CPU arrays also implement the ``__array_interface__`` protocol, so NumPy can create zero-copy views of them directly:
+
+.. testcode::
 
     w = wp.array([1.0, 2.0, 3.0], dtype=float, device="cpu")
-    a = np.array(w)
+    a = np.asarray(w)
     print(a)
-    > [1. 2. 3.]
 
-Data type conversion utilities are also available for convenience:
+.. testoutput::
+
+    [1. 2. 3.]
+
+Warp does not support implicit NumPy conversion of arrays on CUDA devices, such as passing them to ``np.asarray()``. Call :meth:`array.numpy() <warp.array.numpy>` explicitly to obtain a NumPy array.
+
+.. _numpy-scalar-dtypes:
+
+Scalar data types
+^^^^^^^^^^^^^^^^^
+
+Use :func:`wp.dtype_to_numpy() <warp.dtype_to_numpy>` to convert Warp scalar types to NumPy dtype specifications. Explicit conversion ensures the intended NumPy dtype is selected across both older and newer NumPy versions:
 
 .. code:: python
 
-    warp_type = wp.float32
-    ...
-    numpy_type = wp.dtype_to_numpy(warp_type)
-    ...
-    a = wp.zeros(n, dtype=warp_type)
-    b = np.zeros(n, dtype=numpy_type)
+    import numpy as np
+    import warp as wp
+
+    indices = np.zeros(100, dtype=wp.dtype_to_numpy(wp.int32))
+    values = np.full(100, 1.25, dtype=wp.dtype_to_numpy(wp.float32))
+    assert indices.dtype == np.dtype(np.int32)
+    assert values.dtype == np.dtype(np.float32)
+
+The converted dtype can also be used with ``np.dtype()``, ``astype()``, and structured dtype fields. Warp scalar values require an explicit dtype when constructing NumPy arrays.
+
+.. note::
+
+    Warp's Boolean, signed and unsigned integer, and float16/float32/float64 types expose their equivalent NumPy dtype through the ``__numpy_dtype__`` attribute. NumPy 2.4 and later recognize this attribute, avoiding object-dtype allocations and their performance overhead when a Warp scalar type is passed directly as a dtype specification. Older NumPy versions still select the object dtype in that case. Continue using ``wp.dtype_to_numpy()`` for consistent behavior across NumPy versions. This protocol does not change dtype inference from Warp scalar values.
+
+:class:`wp.bfloat16 <warp.bfloat16>` does not expose ``__numpy_dtype__`` because NumPy has no native bfloat16 dtype.
+
+The existing ``wp.dtype_to_numpy(wp.bfloat16)`` mapping returns ``np.uint16`` for raw storage. When initializing or filling arrays with this dtype, use values that are already encoded as bfloat16 bit patterns. To convert floating-point values to bfloat16, use ``wp.array([1.5], dtype=wp.bfloat16)`` or ``ml_dtypes.bfloat16`` as the NumPy dtype.
 
 To create Warp arrays from NumPy arrays, use :func:`warp.from_numpy` or pass the NumPy array as the ``data`` argument of the :class:`warp.array` constructor directly.
 

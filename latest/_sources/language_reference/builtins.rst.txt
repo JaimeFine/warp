@@ -13,13 +13,14 @@ Scalar Math
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    abs
    acos
    asin
    atan
    atan2
+   bit_count
    cbrt
    ceil
    clamp
@@ -62,7 +63,7 @@ Vector Math
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    argmax
    argmin
@@ -104,7 +105,7 @@ Quaternion Math
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    quat_from_axis_angle
    quat_from_euler
@@ -130,7 +131,7 @@ Transformations
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    transform_compose
    transform_decompose
@@ -153,15 +154,13 @@ Spatial Math
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    spatial_adjoint
    spatial_bottom
    spatial_cross
    spatial_cross_dual
    spatial_dot
-   spatial_jacobian
-   spatial_mass
    spatial_top
    spatial_vector
    transform_twist
@@ -174,7 +173,7 @@ Tile Primitives
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    tile
    tile_arange
@@ -247,15 +246,17 @@ Geometry
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    bvh_get_group_root
    bvh_query_aabb
    bvh_query_aabb_tiled
+   bvh_query_capsule
    bvh_query_next
    bvh_query_next_tiled
    bvh_query_ray
    bvh_query_ray_tiled
+   bvh_query_sphere
    closest_point_edge_edge
    hash_grid_point_id
    hash_grid_query
@@ -265,6 +266,7 @@ Geometry
    mesh_eval_position
    mesh_eval_velocity
    mesh_get
+   mesh_get_bvh
    mesh_get_group_root
    mesh_get_index
    mesh_get_point
@@ -274,6 +276,7 @@ Geometry
    mesh_query_aabb_next_tiled
    mesh_query_aabb_tiled
    mesh_query_furthest_point_no_sign
+   mesh_query_next
    mesh_query_point
    mesh_query_point_no_sign
    mesh_query_point_sign_normal
@@ -282,6 +285,9 @@ Geometry
    mesh_query_ray
    mesh_query_ray_anyhit
    mesh_query_ray_count_intersections
+   mesh_query_sphere
+
+.. _builtins-volumes:
 
 Volumes
 -------
@@ -289,7 +295,7 @@ Volumes
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    volume_index_to_world
    volume_index_to_world_dir
@@ -314,13 +320,15 @@ Volumes
    volume_world_to_index
    volume_world_to_index_dir
 
+.. _builtins-textures:
+
 Textures
 --------
 
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    texture_sample
 
@@ -330,7 +338,7 @@ Random
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    curlnoise
    noise
@@ -358,7 +366,7 @@ Utility
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    array
    atomic_add
@@ -390,7 +398,7 @@ Other
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    lower_bound
 
@@ -400,7 +408,7 @@ Operators
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    add
    bit_and
@@ -425,6 +433,6 @@ Code Generation
 .. autosummary::
    :nosignatures:
    :toctree: _generated
-   :template: builtins.rst
+   :template: warp_function.rst
 
    static
